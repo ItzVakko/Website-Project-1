@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  max-width: 1920px;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+button {
+  width: 130px;
+  height: 42px;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 160%; /* 22.4px */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.container {
+  max-width: 1420px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.news-section {
+  width: 100%;
+  min-height: 950px;
+  background-color: #f8f8fa;
+}
+
+.slide-container {
+  width: 100%;
+  min-height: 696px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.slide-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.slide-header h2 {
+  color: #000;
+  font-size: 40px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.card-wrapper {
+  display: flex;
+}
+
+.card {
+  min-width: 440px;
+  max-width: 440px;
+  height: 560px;
+  max-height: 560px;
+}
+
+.image-box {
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.image-box::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    206deg,
+    rgba(67, 26, 26, 0) -7.14%,
+    #431a1a 121.86%
+  );
+}
+
+.image-box img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.image-box h2 {
+  max-width: 360px;
+  position: relative;
+  color: #fff;
+  font-size: 34px;
+  font-weight: 700;
+  margin: 0 40px;
+  margin-top: 273px;
+  z-index: 1;
+}
+
+.image-box p {
+  position: relative;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+  opacity: 0.8;
+  margin: 0 40px;
+  margin-top: 18px;
+  z-index: 1;
+}
+
+.image-box button {
+  position: relative;
+  z-index: 1;
+  margin: 0 40px;
+  margin-top: 37px;
+}
+
+.image-box button svg {
+  margin-left: 11px;
+}
+
+/*Swiper Arrows*/
+
+.swiper-button-prev::after {
+  content: "";
+  display: none;
+  position: absolute;
+}
+
+.swiper-button-next::after {
+  content: "";
+  display: none;
+}
