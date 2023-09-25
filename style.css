@@ -40,9 +40,9 @@ button:hover {
 }
 
 .news-section {
-  width: 100%;
   min-height: 950px;
   background-color: #f8f8fa;
+  position: relative;
 }
 
 .slide-container {
@@ -51,6 +51,7 @@ button:hover {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  position: absolute;
 }
 
 .slide-header {
